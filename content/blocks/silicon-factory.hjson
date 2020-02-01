@@ -1,6 +1,6 @@
 type: GenericSmelter
 name: Silicon Factory
-description: Utilises oil and sand to produce silicon twice as effeciently.
+description: Utilises water, coal and sand to produce silicon more effeciently.
 liquidCapacity: 50
 size: 2
 hasPower: true
@@ -13,11 +13,12 @@ consumes: {
   items: {
     items: [
       sand/2
+      coal/1
     ]
   }
   liquid: {
-    liquid: oil
-    amount: 0.075
+    liquid: water
+    amount: 0.25
   }
 }
 requirements: [
@@ -30,4 +31,4 @@ category: crafting
 research: silicon-smelter
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: silicon/2
+outputItem: silicon/4
